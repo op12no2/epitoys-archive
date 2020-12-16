@@ -1,0 +1,73 @@
+<?php
+//
+// this is the base english locale.  to translate into a different language
+// change the strings in quotes to the right of the = signs and save to for
+// example "german.txt" then email to colin@sailwave.com.  all translations
+// are attributed on the website.
+//
+
+// set values to "" if you do not want to make them public.
+
+$a_locale  = "English";
+$a_author  = "Colin Jenkins";
+$a_date    = "2012-1-13";
+$a_email   = "op12no2@gmail.com";
+$a_twitter = "@op12no2";
+$a_website = "http://op12no2.me";
+$a_comment = "Base English locale.";
+
+// general
+
+$t_title          = "Herd Immunity Demonstration";
+$t_back           = "BACK";
+$t_next           = "NEXT";
+$t_of             = "of";                    //as in 2 of 8
+
+// feedback fields
+
+$t_population    = "population";
+$t_susceptible   = "susceptible";
+$t_recovered     = "recovered";
+$t_infected      = "infected";
+
+// buttons
+
+$t_buttonplaytext     = "Play";
+$t_buttonplaytip      = "play the scenario";
+
+$t_buttonpausetext    = "Pause";
+$t_buttonpausetip     = "pause/resume scenario";
+
+$t_buttonsteptext     = "Step";
+$t_buttonsteptip      = "single step scenario";
+
+$t_buttonresettext    = "Reset";
+$t_buttonresettip     = "reinitialise scenario - it will be slightly different due to in-built randomness";
+
+// scenarios
+
+$t_introtitle    = "Introduction";
+$t_introtext     = "A population of individuals completely susceptible (red) to infection.<p>Click Play to watch them moving around their environment at random. The slider controls speed.<p>Use the other controls to pause/resume, step and reset the scenario.<p>This is 1 of 8 scenarios.  It just introduces movement (it's boring!) - infection comes next.<p>Click the NEXT link (above) on any scenario at any time to see the next one and BACK to see the previous one.<p>Random elements to initialisation mean that no scenario is ever set up the same twice, even when replaying (Reset, then Play).<p>This is a Susceptible Infected Recovered (SIR) model with people always being in one of those three states.";
+
+$t_novaxtitle    = "Unvaccinated population";
+$t_novaxtext     = "A single infected (green) person is now introduced on the left.<p>The disease is so infectious that any susceptibles coming into contact with an infectious person are also infected.<p>In this model, contact means diagonally or orthogonally adjacent as they move about randomly.  Measles is not far off being this infectious.<p>Infected people eventually recover and are considered immune (blue).<p>Click Play to watch the disease sweep through the population.<p>The scenario automatically stops when there are no infections.<p>Replay (Reset then Play) the scenario a few times if you didn't quite follow what was happening.";
+
+$t_vaxtitle      = "Herd immunity";
+$t_vaxtext       = "The single infected person is now introduced to a population that is highly vaccinated.  As is common in SIR models, this is done by giving them a shortcut into the recovered fraction of the population.<p>When you play the scenario you'll see that very few (sometimes none) of the susceptibles are infected because they have indirect protection from those who are vaccinated.<p>This phenomenon is called herd immunity.<p>The scenario automatically stops when there are no infections.<p>Replay the scenario a few times (Reset then Play) to see different random starting conditions.";
+
+$t_herdtitle     = "Herd immunity and freeloading";
+$t_herdtext      = "Herd immunity is important because there are number of people who cannot be vaccinated for health or age reasons - herd immunity effecting an indirect and statistically safe space for them.<p>If additionally, a small number of people choose to not vaccinate for ideological reasons - freeloaders - they too are proteced by herd immunity.<p>In this and successive scenarios solid red represents those who cannot be vaccinated for health or age reasons and outline red represents freeloaders.<p>Both groups are susceptible to infection.<p>This scenario shows that a small number of freeloaders does not affect herd immunity.";
+
+$t_freeloadtitle = "Herd immunity breakdown by freeloaders";
+$t_freeloadtext  = "As we saw in the previous scenario, a small number of freeloaders are also protected by herd immunity.<p>As the number of freeloaders increases however, a critical point is reached where by herd immunity breaks down completely.<p>Both freeloaders <i>and</i> those that cannot be vaccinated for health or age reasons are no longer indirectly protected by herd immunity.<p>In this scenario that point has been reached.<p>The result is that very often all susceptibles are infected.<p>As this is a longer infection scenario, it's displayed at a faster rate.";
+
+$t_pockettitle   = "Herd immunity + freeloader pocket";
+$t_pockettext    = "While freeloaders are randomy distributed on a geographically large scale, they can also gather in pockets that are very susceptible to infection, for example Waldorf schools.<p>This scenario shows a high background vaccination rate with a pocket of freeloaders near the single infected person.<p>The infection rips through the freeloader pocket and can unfortunately affect other physically close people that cannot be vaccinated for health or age reasons.<p>Once the mini epidemic is over herd immunity kicks in again.";
+
+$t_lucktitle     = "Lady luck";
+$t_lucktext      = "While herd immunity provides a statistically good chance of protection, it is not a guarantee.<p>Even being one of only a few susceptible people in a massively vaccinated popoulation is not going to protect you if an infected person steps off a plane and you are one of the first people encountered.<p>In this scenario one of the people who cannot be vaccinated for health or age reasons happens to be in the wrong place at the wrong time and infection is inevitable.<p>See top left.";
+
+$t_cocoontitle   = "Cocooning";
+$t_cocoontext    = "Cocooning is a strategy to reduce the luck element of infection.<p>It is often feasible to actively minimise contact with other people for those that cannot be vaccinated for age or health reasons.<p>For example, by as far as possible, not allowing any infected or susceptible people access to a newborn (susceptibles may be recently infected).<p>In this scenario herd immunity has broken down but those who cannot be vaccinated for age or health reasons are being actively protected by keeping them at home or in a hospital and limiting contact to vaccinated or immune people.";
+?>
+

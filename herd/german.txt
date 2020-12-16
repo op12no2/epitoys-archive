@@ -1,0 +1,76 @@
+<?php
+//
+// this is the base english locale.  to translate into a different language
+// change the strings in quotes to the right of the = signs and save to for
+// example "german.txt" then email to colin@sailwave.com.  all translations
+// are attributed on the website.
+//
+
+// author
+// set values to "" if you do not want to make them public.
+
+$a_locale  = "Deutsch";
+$a_author  = "Stefan Kaufmann";
+$a_date    = "2012-1-13";
+$a_email   = "stk at uni-ulm de";
+$a_twitter = "@_stk";
+$a_website = "http://stefan.bloggt.es";
+$a_comment = "German translation by someone without epidemologic background.";
+
+// general
+
+      $t_title          = "Erläuterung von Herdenimmunität";
+      $t_othermodeltext = "Algebraisches Modell";
+      $t_othermodeltip  = "Hier klicken für ein alternatives algebraisches SIR-Infektionsmodell";
+      $t_back           = "ZURÜCK";
+      $t_next           = "WEITER";
+      $t_of             = "von"; //as in 2 of 8
+
+// feedback fields
+
+      $t_population    = "population";
+      $t_susceptible   = "infizierbar";
+      $t_recovered     = "gesundet";
+      $t_infected      = "infiziert";
+
+// buttons
+
+      $t_buttonplaytext     = "Start";
+      $t_buttonplaytip      = "Szenario abspielen";
+
+      $t_buttonpausetext    = "Pause";
+      $t_buttonpausetip     = "Szenario anhalten/fortsetzen";
+
+      $t_buttonsteptext     = "Step";
+      $t_buttonsteptip      = "Szenario um einen einzelnen Schritt fortsetzen";
+
+      $t_buttonresettext    = "Reset";
+      $t_buttonresettip     = "Szenario neu starten -- sorgt für ein vollkommen neues, zufällig erzeugtes Szenario";
+
+// scenarios
+
+      $t_introtitle    = "Einführung";
+      $t_introtext     = "Ein Bestand mit ausschließlich infektionsanfälligen Personen (rot)<p>Beim Klick auf Start bewegen sich die Personen zufällig in ihrer Umgebung. Der Schieberegler unten beeinflusst die Geschwindigkeit.<p>Mit den anderen Buttons lässt sich das Szenario anhalten/fortsetzen, schrittweise fortsetzen und zurücksetzen.<p>Dies ist Szenario 1 von 8. Es zeigt lediglich die Bewegung (langweilig!) - Ansteckung kommt als nächstes.<p>Mit \"WEITER\" (oben) und \"ZURÜCK\" lässt sich das Szenario zu jeder Zeit wechseln.<p>Anmerkung: Durch Zufallselemente ist kein Szenario identisch zu einem  vorhergehenden, d.h. \"Reset\" und \"Play\" führt zu einem vollkommen neuen Szenario";
+
+      $t_novaxtitle    = "Ungeimpfte Population";
+      $t_novaxtext     = "Eine einzige infizierte (grüne) Person wird nun oben links ins Szenario eingeführt.<p>Die Krankheit ist so ansteckend, dass alle infektionsanfälligen Personen beim Kontakt mit einer infizierten Person sofort ebenfalls infiziert werden.<p>In diesem Modell bedeutet \"Kontakt\" eine Begegnung auf einem diagonal oder orthogonal angrenzenden Feld im Laufe der zufälligen Bewegung. Masern sind annähernd so ansteckungsgefährlich wie in diesem Modell beschrieben.<p>Infizierte Personen gesunden nach einem gewissen Zeitraum und sind dann immun (blau)<p>Klicke Start, um die Verbreitung der Krankheit durch die Population zu beobachten.<p>Das Szenario endet automatisch, wenn keine Infektionen mehr vorliegen.<p>Falls das zu schnell ging, kann das Szenario mit Reset und Start neu initialisiert und abgespielt werden.";
+
+      $t_vaxtitle      = "Herdenimmunität";
+      $t_vaxtext       = "Die einzelne, infizierte Person wird nun in eine weitgehend geimpfte Population eingeführt. Wie in SIR-Modellen üblich, fallen die geimpften Personen einfach in die \"gesundet\"-Kategorie, d.h. sie sind durch die Impfung gesund und immun, ohne dass sie dafür erkranken mussten.<p>Beim Abspielen dieses Szenarios fällt auf, dass nur wenige infektionsanfällige Personen infiziert werden (manchmal gar keine), da sie einen indirekten Schutz durch den geimpften Bevölkerungsteil haben.<p>Dieses Phänomen heißt Herdenimmunität.<p>Das Szenario endet automatisch, wenn keine Infektionen mehr vorliegen.<p>Mit Reset/Start kann es mit neuen (zufälligen) Startbedingungen erneut durchgespielt werden.";
+
+      $t_herdtitle     = "Herdenimmunität und Trittbrettfahrer";
+      $t_herdtext      = "Herdenimmunität ist wichtig, da bestimmte Bevölkerungsgruppen aus Alters- oder Gesundheitsgründen nicht geimpft werden können - Herdenimmunität sorgt also für einen indirekte, statistisch abgesicherten Raum für diese Gruppen.<p>Falls sich zusätzlich eine geringe Anzahl von Menschen aus ideologischen Gründen gegen eine Impfung entscheidet - Trittbrettfahrer - sind diese auch durch die Herdenimmunität geschützt.<p>In diesem und den folgenden Szenarien stehen vollständig rote Marker für Menschen, die aus Gesundheits- oder Altersgründen nicht geimpft werden können, rote Umrisse stehen für Trittbrettfahrer.<p>Beide Gruppe sind infektionsanfällig.<p>Dieses Szenario zeigt, dass eine kleine Anzahl an Trittbrettfahrern die Herdenimmunität nicht beeinträchtigt.";
+
+      $t_freeloadtitle = "Überwindung der Herdenimmunität durch Trittbrettfahrer";
+      $t_freeloadtext  = "Wie im vorhergehenden Szenario beobachtet, ist eine kleinere Anzahl an  Trittbrettfahrern ebenfalls durch die Herdenimmunität geschützt.<p>Bei steigender Anzahl von Trittbrettfahrern wird jedoch ein kritischer Punkt erreicht, ab dem die Herdenimmunität vollständig versagt.<p>In diesem Fall sind sowohl die Trittbrettfahrer als auch die Gruppen, die aus Gesundheits- oder Altersgründen nicht geimpft werden können, nicht mehr durch die Herdenimmunität geschützt.<p>In diesem Szenario ist dieser kritische Punkt erreicht.<p>Oftmals werden in diesem Fall alle infektionsanfälligen Personen auch infiziert.<p>Da dies ein längeres Infektionsszenario ist, wird es mit höherer Geschwindigkeit angezeigt.";
+
+      $t_pockettitle   = "Herdenimmunität und Häufung von Trittbrettfahrern";
+      $t_pockettext    = "Trittbrettfahrer waren in den vergangenen Szenarien zufällig auf eine weite Fläche verteilt. Sie können sich jedoch auch an bestimmten Orten häufen, die besonders zur Infektionsverbreitung beitragen können, beispielsweise Waldorfschulen.<p>Dieses Szenario zeigt eine hohe Impfrate mit einer lokalen Häufung von Trittbrettfahrern in der Nähe einer einzelnen infizierten Person.<p>Die Infektion schießt durch den Trittbrettfahrerbestand und kann unglücklicherweise auch andere, räumlich nahegelegene Personen beeinträchtigen, die aus Gesundheits- oder Altersgründen nicht geimpft werden können.<p>Sobald die Miniepidemie vorbei ist, greift wieder die Herdenimmunität.";
+
+      $t_lucktitle     = "Der Zufall";
+      $t_lucktext      = "Während Herdenimmunität eine statistisch gute Schutzwahrscheinlichkeit bietet, bedeutet sie keine Schutzgarantie.<p>Wenn eine von nur sehr wenigen infektionsanfälligen Personen in einer weitestgehend geimpften Bevölkerung einer frisch infizierten Person begegnet, die gerade aus einem Flugzeug steigt, hilft auch die Herdenimmunität nicht.<p>In diesem Szenario ist eine Person, die aus Gesundheits- oder Altersgründen nicht geimpft werden kann, zufällig zur falschen Zeit am falschen Ort - eine Ansteckung ist unvermeidlich.<p>Siehe oben links.";
+
+      $t_cocoontitle   = "Cocooning";
+      $t_cocoontext    = "Isolation ist eine Strategie, um das Zufallselement einer Infektion zu reduzieren.<p>Es ist oft möglich, den Kontakt zwischen Personen, die aus Alters- oder Gesundheitsgründen nicht geimpft werden können, und dem Rest der Bevölkerung zu minimieren.<p>Beispielsweise kann der Kontakt von Infizierten und Infektionsanfälligen (nicht-geimpften) zu Neugeborenen so weit wie möglich unterbunden werden. (Nicht-geimpfte könnten sich kurz zuvor angesteckt haben)<p>In diesem Szenario ist die Herdenimmunität nicht mehr wirksam. Personen, die aus Alters- oder Gesundheitsgründen nicht geimpft werden können, werden jedoch aktiv geschützt, indem sie zuhause oder in einer Klinik isoliert und lediglich Kontakt zu geimpften oder immunen Personen haben.";
+?>
+

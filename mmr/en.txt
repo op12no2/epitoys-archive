@@ -1,0 +1,56 @@
+<?php
+//
+// this is the base english locale.  to translate into a different language
+// change the strings in quotes to the right of the = signs and save to for
+// example "de.txt" or "fr.txt" then email to colin@sailwave.com.  all
+// translations are attributed on the website.
+//
+
+// author
+// set values to "" if you do not want to make them public.
+
+$a_locale  = "English";
+$a_author  = "Colin Jenkins";
+$a_date    = "2012-1-20";
+$a_email   = "op12no2@gmail.com";
+$a_twitter = "op12no2";
+$a_website = "http://op12no2.me";
+$a_comment = "Base English locale.";
+
+// general
+
+$n                = 88; //autism spectrum diagnosis rate is 1 / $n
+
+$t_title          = "Beating the Drum - A Demonstration of Correlation";
+$t_back           = "BACK";
+$t_next           = "NEXT";
+$t_of             = "of"; //as in 2 of 6
+
+$t_introtitle     = "Introduction";
+$t_introtext      = "This page just introduces the demonstration.  The moving blue square represents a child's age from birth (B) to 6 years old.  The square spans 1 month.  When the blue square jumps back to B it represents a different child.  The number of children viewed so far is shown in the bottom left of the display.  Use the slider to speed up or slow down the rate at which children age.  When you are comfortable with what you are viewing, click NEXT (top right) to go to the next page.<p>You can click NEXT or BACK at any time to move between the pages of the demonstration.<p>You can use the speed slider at any time.";
+
+$t_drumtitle      = "The Drum";
+$t_drumtext       = "In the world of this demonstration, the government has decided that about 1 in every $n children should own a drum.  You are viewing those children, one by one.  The drum is dispatched (dark red square) to these children some time between 2 months and 6 years of age (light red bar).  The dispatches are random within this period.<p>Click NEXT when you've seen enough drums dispatched.";
+
+$t_stickstitle    = "The Drumsticks";
+$t_stickstext     = "The government has also decided that drumsticks would be a good idea, but they only manage to dispatch them (dark green) one at a time.  The first is sent between 12 and 15 months of age and the second between 3 and 5 years of age.  Again, randomly within those periods.<p>Click NEXT when you've seen enough drumsticks dispatched.";
+
+$t_playtitle      = "Beating the Drum";
+$t_playtext       = "Occasionally the drum arrives very soon after a drumstick.  In the demonstration this is manifest by a green square being immediately to the left of the red square.<p>This temporal correlation doesn't happen very often when viewing the scenario like this.  When it does, the display shows a yellow highlight.<p>The counter now shows how many of these correlations happen relative to the total number of drums sent out.<p>You may have to wait quite a while to see even one because we are only observing a tiny fraction of the recipients; your local neighbourhood if you like.  Use the speed slider to make them happen quicker.  You still may need to wait a while before one happens.<p>Click NEXT whenever you like.";
+
+$t_counttitle     = "Banding Together";
+$t_counttext      = "We are now only displaying those children with a drumstick - drum correlation.  If no correlation happens, the child is filtered out from the display but they still contribute to the overall count.  That's why the count jumps up in increments now.<p>You'll see the frequency converges to about 3%.  i.e. in 3% of the 1 in a $n children sent drums and drumsticks, there is a close temporal correlation between their arrival, with the drum closely following a drumstick.<p>It would be perfectly understandable if parents thought this highly unusual, because like us on the previous page, they will only be personally aware of a tiny fraction of the poulation.  Some may even joke that it seems so unusual, its almost as if the drumstick caused the drum to arrive.<p>But when you consider that more than 4,000,000 children are born in the USA every year, this correlation will actually happen to a lot of families.  ";
+$t_counttext     .= "It would not be hard for such families to find each other once they realise its not 'just them' - and band together in a group that was thousands strong.<p>What would be unusual, is if this never happened, since its mathematically inevitable as shown above.";
+
+$t_mmrtitle       = "MMR";
+$t_mmrtext        = "In the USA the autism spectrum diagnosis rate is about 1 in <a target=\"_blank\" href=\"http://www.cdc.gov/ncbddd/autism/index.html\">$n</a>.";
+$t_mmrtext       .= "<p>The period within which parents first notice a <a target=\"_blank\" href=\"http://www.autismsciencefoundation.org/autism-warning-signs\">behavioural change</a> is the same as that of the drum.";
+$t_mmrtext       .= "<p>The periods within which children receive their MMR vaccinations are (with some small international variations) the same as those of the drumsticks.";
+$t_mmrtext       .= "<p>It has been shown in court that parents often sincerely and understandably mis-remember the onset of behavioural change, mistakenly placing it close after MMR vaccination, further swelling the ranks those families that could band together.";
+$t_mmrtext       .= "<p>There is no good scientific evidence</a> that MMR causes autism.";
+$t_mmrtext       .= "<p>There is good <a target=\"_blank\" href=\"http://www.autismsciencefoundation.org/autismandvaccines.html\">scientific evidence</a> refuting a causal link between MMR causes autism.";
+$t_mmrtext       .= "<p>There is a growing body of good <a target=\"_blank\" href=\"http://www.autismsciencefoundation.org/research-year\">scientific evidence</a> that autism is a genetic condition.  It is unknown if in utero environmental triggers are involved.";
+$t_mmrtext       .= "<p>Find out more at <a target=\"_blank\" href=\"http://vaxfax.me?q=mmr\">vaxfax.me</a>";
+
+?>
+

@@ -1,0 +1,74 @@
+<?php
+//
+// this is the base english locale.  to translate into a different language
+// change the strings in quotes to the right of the = signs and save to for
+// example "german.txt" then email to colin@sailwave.com.  all translations
+// are attributed on the website.
+//
+
+// set values to "" if you do not want to make them public.
+
+$a_locale  = "French";
+$a_author  = "Danny Darche";
+$a_date    = "2012-9-17";
+$a_email   = "";
+$a_twitter = "@dannydarche";
+$a_website = "http://loredarche.be";
+$a_comment = "In loving memory of Lore Darche";
+
+// general
+
+$t_title          = "Démonstration de l’immunité de groupe";
+$t_back           = "BACK";
+$t_next           = "NEXT";
+$t_of             = "of";                    //as in 2 of 8
+
+// feedback fields
+
+$t_population    = "population";
+//$t_susceptible   = "susceptibles<br>d’être<br>infectés";
+$t_susceptible   = "susceptibles";
+$t_recovered     = "guéris";
+$t_infected      = "infectés";
+
+// buttons
+
+$t_buttonplaytext     = "Play";
+$t_buttonplaytip      = "play the scenario";
+
+$t_buttonpausetext    = "Pause";
+$t_buttonpausetip     = "pause/resume scenario";
+
+$t_buttonsteptext     = "Step";
+$t_buttonsteptip      = "single step scenario";
+
+$t_buttonresettext    = "Reset";
+$t_buttonresettip     = "reinitialise scenario - it will be slightly different due to in-built randomness";
+
+$t_introtitle    = "Introduction";
+$t_introtext     = "Une population (en rouge) entièrement constituée d’individus suceptibles d’être infectés.<p>Cliquez sur Play pour les voir se mettre en mouvement au hasard dans leur environnement. Le curseur controle la vitesse.<p>Utilisez les autres boutons pour faire une pause/redémarrer, pour avancer pas à pas ou pour recommencer l’animation. <p>Ceci est le 1er de 8 scénarios.  Les individus se mettent juste en mouvement (c’est monotone!) mais l’infection arrive. <p>Cliquez sur NEXT en haut à droite à n’importe quel moment pour passer au scénario suivant ou sur BACK pour revenir au précédent. <p>Ceci est un modèle SIG : Susceptibles, Infectés ou Guéris, avec des gens se trouvant toujours dans une de ces trois situations.";
+
+$t_novaxtitle    = "Population non-vaccinée";
+$t_novaxtext     = "Une seule personne infectée (en vert)est maintenant introduite en haut à gauche de l’écran.<p>La maladie est tellement contagieuse que n’importe qui entrant en contact avec elle sera aussi infecté.<p>Dans ce modèle, entrer en contact signifie diagonalement ou orthogonalement adjacent du fait que les individus bougent dans toutes les directions.  La rougeole est très proche de ce modèle de contamination. <p>Les personnes infectées guérissent éventuellement et sont dès lors considérées comme immunisées (en bleu).<p>Cliquez sur Play pour voir comment la maladie va envahir la population.<p>Le scénario s’arrêtera automatiquement quand il n’y aura plus d’infections.<p>Rejouez le scénario (reset/Play)plusieurs fois si vous n’êtes pas sûrs d’avoir bien su tout suivre.";
+
+$t_vaxtitle      = "L’immunité de groupe";
+$t_vaxtext       = "La personne infectée est maintenant introduite parmi une population hautement vaccinée. Du fait qu’elle est vaccinée, cette population est directement considérée comme guérie dans notre modèle SIG.<p>En démarrant l’animation, vous constaterez que très peu de personnes susceptibles d’être infectées le sont (voire aucune) car elles bénéficient d’une protection indirecte des personnes qui sont vaccinées.<p>Ce phénomène s’appelle l’immunité de groupe.<p>Le scénario s’arrêtera automatiquement dès qu’il n’y aura plus d’infections.<p>Rejouez le scénario plusieurs fois  (Reset/Play) pour découvrir les différentes situations de départ.";
+
+$t_herdtitle     = "L’immunité de groupe et ses bénéficiaires passifs";
+$t_herdtext      = "’immunité de groupe est très importante car un certain nombre de personnes ne peuvent pas être vaccinées pour des raisons de santé ou pour une question d’âge.  L’immunité de groupe leur procurera statistiquement une protection indirecte.<p>Si en plus, un petit nombre d’individus choisissent de ne pas se faire vacciner pour des raisons idéologiques, eux-aussi bénéficieront passivement de la protection offerte par l’immunité de groupe.<p>Dans ce scénario et les suivants, les carrés remplis de rouge représentent les persones qui ne peuvent être vaccinées pour raisons médicales ou pour une raison d’âge, et les carrés aux bords rouges représentent les personnes qui refusent la vacination.<p>Ces deux groupes sont tous deux susceptibles d’être infectés.<p>Ce scénario démontre qu’un petit nombre de ces personnes n’affectera pas l’immunité de groupe.";
+
+$t_freeloadtitle = "L’inefficacité de l’immunité de groupe due aux personnes non-vaccinées";
+$t_freeloadtext  = "Comme nous l’avons vu dans le scénario précédent, un nombre réduit de personnes non-vaccinées n’affecte en rien l’immunité de groupe et elles bénéficient même de sa protection.<p>Mais quand ce nombre devient plus important, un point critique peut être atteint où l’immunité de groupe devient complètement inefficace.<p>Les deux groupes non-vaccinés, par idéologie <i>et</i> pour raison médicale ou d’âge ne seront plus protégés indirectement par l’immunité de groupe.<p>Dans ce scénario, ce point critique a été atteint.<p>Le résultat est que dans la toute grande majorité des cas, toutes les personnes susceptibles d’être infectées le seront.<p>Comme ce scénario est en réalité très long, l’animation défile  ici à vitese élevée.";
+
+$t_pockettitle   = "L’immunité de groupe et les communautés non-vaccinées";
+$t_pockettext    = "Alors que la population qui ne peut être vaccinée est répandue plus ou moins uniformément sur le territoire, il se peut aussi que celle qui ne veut pas de vaccination soit ici et là concentrée dans de petites communautés hautement susceptibles d’être infectées telles que les écoles Waldorf.<p>Ce scénario met en scène une population hautement vaccinée et une de ces petites communautés non-vaccinée dans les environs d’une personne infectée.<p>l’infection va très vite se répandre dans cette petite communauté et malheureusement atteindre des personnes qui ne peuvent pas être vaccinées pour raison médicale ou pour leur trop jeune âge. <p>Une fois la mini épidémie passée, l’immunité de groupe recommencera à fonctionner normalement.";
+
+$t_lucktitle     = "Madame la chance";
+$t_lucktext      = "Alors que l’immunité de  groupe nous procure statistiquement une bonne chance de protection, elle ne représente  cependant pas une garantie totale.<p>Même si vous êtes une des personnes susceptibles au milieu d’une population massivement vacinée, vous ne serez pas protégé si par exemple un individu infecté descend d’un avion et que vous êtes la première personne qu’il rencontre.<p>Dans ce scénario, une personne qui ne peut être vaccinée pour raison médicale ou pour son âge, et qui se trouvera au mauvais moment au mauvais endroit sera inévitablement infectée.<p>Voir en haut à gauche.";
+
+$t_cocoontitle   = "Cocooning";
+$t_cocoontext    = "La vaccination cocoon est une stratégie visant à réduire le  facteur chance d’être infecté.<p>Pour ceux qui ne peuvent pas être vaccinés, il est souvent possible de réduire au minimum leur exposition au risque d’être infectés.<p>Par exemple, dans la mesure du possible, en interdisant à toute personne non-vaccinée de s’approcher d’un nouveau-né (Cette personne susceptible peut très bien avoir été infectée récemment et ne présenter aucun symptome de la maladie).<p>Dans ce scénario, l’immunité de groupe n’a pas fonctionné mais les personnes qui ne peuvent pas être vaccinées pour raisons médicales ou pour leur trop jeune age peuvent être efficacement protégées en restant à leur domicile ou à l’hopital et en limitant les contacts aux seules personnes qui sont vaccinées ou immunisées.";
+
+?>
+
+
